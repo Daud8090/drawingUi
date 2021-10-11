@@ -11,7 +11,8 @@ import io from "socket.io-client";
 
 
 function Container() {
-  const socket = io('http://localhost:5000/')
+  const socket = io('https://drawingserver.herokuapp.com/')
+  // const socket = io('http://localhost:5000/')
   const [col, setcol] = useState("black");
   const [Name, setName] = useState('');
   const [Room, setRoom] = useState('');
